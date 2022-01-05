@@ -18,7 +18,7 @@
 
     <body>
         <header>
-            <h1>titre</h1>
+            <h1><a href="#">titre</a></h1>
             <nav>
                 <input type="checkbox" id="active">
                 <label for="active" class="menu-btn"><span></span></label>
@@ -35,45 +35,48 @@
         </header>
         <main>
             <h2>qqch</h2>
-             <article>
-                 <a href="pages/article.html">
-                     <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h3>titre de l'article</h3>
-                    <p>categorie</p>
-                    <p>Rapide description</p>
-                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </a>
-                 </article>
+            <div>
+                <label for="categories-select">Choisissez une categorie:</label>
 
-             <article>
-                <a href="pages/article.html">
-                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h3>titre de l'article</h3>
-                    <p>categorie</p>
-                    <p>Rapide description</p>
-                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </a>
-                </article>
+            <select name="categorie" id="categories-select">
+                <option value="">--</option>
+                <option value="categorie">categorie</option>
+                <option value="categorie">categorie</option>
 
-            <article>
-                <a href="pages/article.html">
+            </select>
+            </div>
+            <section class="article-wrapper">
+                <article class="article">
                     <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h3>titre de l'article</h3>
+                    <h3><a href="pages/article.html">titre de l'article</a></h3>
                     <p>categorie</p>
                     <p>Rapide description</p>
                     <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </a>
                 </article>
-
-            <article>
-                <a href="pages/article.html">
+   
+                <article class="article">
                     <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h3>titre de l'article</h3>
+                    <h3><a href="pages/article.html">titre de l'article</a></h3>
                     <p>categorie</p>
                     <p>Rapide description</p>
                     <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </a>
                 </article>
+                <article class="article">
+                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
+                    <h3><a href="pages/article.html">titre de l'article</a></h3>
+                    <p>categorie</p>
+                    <p>Rapide description</p>
+                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                </article>
+                <article class="article">
+                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
+                    <h3><a href="pages/article.html">titre de l'article</a></h3>
+                    <p>categorie</p>
+                    <p>Rapide description</p>
+                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                </article>
+               
+            </section>
             
         </main>
         <footer>
