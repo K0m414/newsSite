@@ -11,36 +11,24 @@ h1{
     text-transform: uppercase;
 }
 /* nav */
+
 /* main */
-
-/* article */
-article{
-    margin: 2%;
-    border-bottom: 1px solid black  ;
-}
-article:last-child{
-    border-bottom: none ;
-}
-.article-wrapper {
-  margin:auto ;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-  grid-gap: 1.5rem;
-  max-width: 100vw;
-  width: 120ch;
-  padding-left: 1rem;
-  padding-right: 1rem;
+figure {
+  border: thin #c0c0c0 solid;
+  display: flex;
+  flex-flow: column;
+  padding: 5px;
+  margin: auto;
 }
 
-.article {
-  border-radius: 0.5rem;
-  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
-  padding-bottom: 1rem;
+figcaption {
+  background-color: #08415C;
+  color: #FFEFD3;
+  font: italic smaller sans-serif;
+  padding: 3px;
+  text-align: center;
 }
-.article h3 {
-  margin-top: 1rem;
-  font-size: 1.25rem;
-}
+
 .article a {
   color: inherit;
 }
@@ -58,16 +46,18 @@ h2{
     text-align: center;
 }
 main>p{
-  padding: 1rem;
+  padding: 0;
 }
 p{
   line-height: 1.55;
 }
 footer{
-  height: 10vh;
+  padding: 4rem;
+  height: 20vh;
   clear: both;
-  background-color: black;
-  color: white;
+  background-color: #1B998B;
+  color: rgb(255, 239, 211);
+  font-weight: bold;
   text-align: center;
 }
 /* nav */
@@ -148,15 +138,15 @@ footer{
     }
     .wrapper ul li{
       height: 10%;
-      margin: 15px 0;
+      margin: 0;
       
     }
     .wrapper ul li a{
       text-decoration: none;
       font-size: 30px;
-      padding: 5px 30px;
+      padding: 0;
       color: #fff;
-      margin: 5px 30px;
+      margin: 0;
       opacity: 0;
       transition: all 0.3s ease;
       transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -197,7 +187,40 @@ footer{
       transition-delay: .6s;
       transform: translateX(-100px);
     }
-
+    .flexslider{
+      display: none ;
+    }
+aside{
+  display:none
+}
+  /* article */
+  .article{
+    margin: 0;
+    border-bottom: 1px solid black  ;
+  }
+  article:last-child{
+    border-bottom: none ;
+  }
+  .article-wrapper {
+  margin:0 ;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+  grid-gap: 1.5rem;
+  max-width: 100vw;
+  width: 120ch;
+  padding-left: 0;
+  padding-right: 0;
+  }
+  
+  .article {
+  border-radius: 0.5rem;
+  box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+  padding-bottom: 0;
+  }
+  .article h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+  }
   }
 
 /* @media screen and (min-width:480px) and (max-width:959px) {
@@ -206,47 +229,135 @@ footer{
 
 @media screen and (min-width:960px) {
   body{
-    background-color: #F5F6F8;
+    background-color:rgba(255, 239, 211, 0.25);
   }
   header {
     font-size: 2em;
     text-align: center;
-    background-color:white ;
+    background-color: #1B998B;
+    display: flex;
+    justify-content: space-between;
   }
   h1 {
-    margin-top: 0;
+    margin: 0;
+    padding: 2rem;
   }
   header nav ul {
-    width: 80%;
+    padding: 2rem;
     margin: auto;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: space-around;
   }
   header nav li {
     list-style: none;
+    padding: 2rem;
   }
+
   header a {
     text-decoration: none;
-    color: #666;
+    color: #FFEFD3;
   }
   #active{
     display: none;
   }
 
   /* main */
+  #home{
+      display: flex;
+      justify-content: space-around;
+  }
+
+
   main{
-    max-width: 70%;
+    max-width: 85%;
     margin:auto;
-    background-color:white ;
+    background-color:rgba(255, 239, 211, 0.4) ;
+  }
+
+  #home section{
+    width: 90%;
     
   }
+  #home> h2{
+    color: #CC2936;
+    margin: 2rem;
+  }
+  li{
+    list-style: none;
+  }
+
+  .fig-title {
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
+  .fig {
+    font-weight: 300;
+    font-size: 0.8rem;
+  }
+  .flexslider .slides img{
+    margin:auto;
+    max-width: 100%;
+  }
+  .flexslider{
+    margin: 1.5%;
+  }
+  
+  .flexslider .slides img{
+    margin:auto;
+  }
   .categorie-title{
-    padding: 1rem;
+    padding: 0;
   }
   .select{
     text-align: end;
   }
 
+  .article {
+    margin: 6rem;
+  }
+  .article h2 {
+    text-transform: uppercase;
+    margin-top: 0;
+    font-size: 1.25rem;
+    color:#CC2936 ;
+  }
+  .article >section > div{
+    margin-left: 4rem;
+    color:#08415C ;
+  }
+  .article >section > img{
+    width: 100%;
+    border-radius: 8px;
+  }
+  .article >section {
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  aside{
+    margin: 0;
+    width: 28%;
+    height: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0.05rem 0.1rem 0.3rem -0.03rem rgba(0, 0, 0, 0.45);
+    margin-top: 2%;
+    padding:1% ;
+    text-align: justify;
+  }
+
+  aside h2{
+  margin: 0 0 2%;
+  }
+  aside h3{
+    margin: 2% 0;
+  }
+
+  aside article{
+    margin: 0 0 2%;
+  }
   section{
     padding-top: 2%;
   }
@@ -254,20 +365,106 @@ footer{
   p{
     font-size: 1.2rem;
   }
-
-  #page-article>article {
-    margin: 0;
+  .categorie-title{
+    color:#CC2936;
   }
-  #page-article article img{
+.presentation{
+  margin: 1rem;
+}
+/*/fils d'ariane/*/
+
+.navigation {
+  display: inline-block;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+}
+
+.navigation a {
+	float: left;
+	line-height: 36px;
+	padding: 0 15px 0 30px;
+	position: relative;
+}
+
+/*adding the arrows for the .navigations using rotated pseudo elements*/
+.navigation a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px; /*half of square's length*/
+	/*same dimension as the line-height of .navigation a */
+	width: 36px; 
+	height: 36px;
+	/*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+	length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+	if diagonal required = 1; length = 1/1.414 = 0.707*/
+	transform: scale(0.707) rotate(45deg);
+	/*we need to prevent the arrows from getting buried under the next link*/
+	z-index: 1;
+	/*background same as links but the gradient will be rotated to compensate with the transform applied*/
+	background: #666;
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+	border-radius: 0 5px 0 50px;
+}
+
+.navigation a, .navigation a:after {
+	background: #FFEFD3;
+	color: #08415C;
+	transition: all 0.5s;
+}
+
+.navigation a:hover, .navigation a.active, 
+.navigation a:hover:after, .navigation a.active:after{
+	background: #BBD1EA;
+}
+#page-article {
+ width: 70%;
+}
+  #page-article> article {
+    margin: 2rem 2rem 0;
+    padding-bottom: 2rem;
+  }
+  #page-article img{
     float: left;
     width: 50%;
     padding: 1rem;
   }
   #page-article article div{
-    padding: 1rem;
+    padding:0;
   }
   #page-article h2{
-    padding: 1rem;
+    padding: 0;
+    font-size: 2rem;
+    color:#CC2936;
+    margin: 1rem;
+  }
+  #page-article h3{
+    margin-top: 2rem;
+    color:#CC2936;
+  }
+  #page-article p{
+    margin: 1rem;
+    color:#08415C;
 
+  }
+  .share{
+    display: flex;
+    justify-content: space-around;
+    width: 15%;
+    float: right;
+    margin: 1rem;
+  }
+  #page-article hr{
+    color: #1B998B;
+    margin: 1rem;
+  }
+  #page-article article small{
+    color: #08415C;
+    margin: 1rem;
+  }
+  footer{
+    background-color: #1B998B;
   }
 }

@@ -13,6 +13,8 @@
         <!-- lien css -->
         <link rel="stylesheet" href="css/normalize.css" type="text/css" />
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        
         <title>Site d'actualité</title>
     </head>
 
@@ -33,7 +35,7 @@
             </div>
         </nav>
         </header>
-        <main>
+        <main id="home">
             <!-- 
             <div>
                 <label for="categories-select">Choisissez une categorie:</label>
@@ -46,43 +48,149 @@
             </select>
             </div> -->
             <!-- <h2>Les articles les plus récents</h2> -->
-            <section class="article-wrapper">
-                <article class="article">
-                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h2><a href="pages/article.html">titre de l'article</a></h2>
-                    <h3>categorie</h3>
-                    <p>Rapide description</p>
-                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </article>
-   
-                <article class="article">
-                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h2><a href="pages/article.html">titre de l'article</a></h2>
-                    <h3>categorie</h3>
-                    <p>Rapide description</p>
-                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </article>
-                <article class="article">
-                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h2><a href="pages/article.html">titre de l'article</a></h2>
-                    <h3>categorie</h3>
-                    <p>Rapide description</p>
-                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </article>
-                <article class="article">
-                    <img src="img/pexels-george-milton-7014337.jpg" alt="">
-                    <h2><a href="pages/article.html">titre de l'article</a></h2>
-                    <h3>categorie</h3>
-                    <p>Rapide description</p>
-                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
-                </article>
-               
+            <section>
+                <div class="flexslider" <div class="flexslider" style="width: 50%;margin: auto;">
+                   
+                    <h2 style="color:#CC2936; margin-bottom: 2rem;">Les articles les plus populaires</h2>
+                    <ul class="slides">
+                        <li class="slides">
+                            <figure>
+                                <img src="img/pexels-george-milton-7014337.jpg" alt="Photo ">
+                                <figcaption>
+                                    <div class="fig-title">titre 1</div>
+                                    <small class="fig">Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="slides">
+                            <figure>
+                                <img src="img/pexels-george-milton-7014337.jpg" alt="Photo ">
+                                <figcaption>
+                                    <div class="fig-title">titre 2</div>
+                                    <small class="fig">Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="slides">
+                            <figure>
+                                <img src="img/pexels-george-milton-7014337.jpg" alt="Photo ">
+                                <figcaption>
+                                    <div class="fig-title">titre 3</div>
+                                    <small class="fig">Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </div>
+                <div class="article-wrapper">
+                    <article class="article">
+                        <h2><a href="pages/article.html">titre de l'article</a></h2>
+                        <section>
+                            <img src="img/pexels-george-milton-7014337.jpg" alt="">
+                            <div>
+                                <h3>categorie</h3>
+                                <p>Rapide description : 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel tempus dui, vel eleifend nibh. 
+                                    Etiam dapibus iaculis ligula eu ullamcorper. Nam imperdiet laoreet nunc quis interdum. Sed ut accumsan nibh, eget maximus diam. 
+                                    Curabitur pretium massa non lacus condimentum cursus. Nullam eget dolor non metus sollicitudin interdum sed vitae urna.</p>
+                                <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                            </div>
+                            
+                        </section>    
+                    </article>
+       
+                    <article class="article">
+                        <h2><a href="pages/article.html">titre de l'article</a></h2>
+                        <section>
+                            <img src="img/pexels-george-milton-7014337.jpg" alt="">
+                            <div>
+                                <h3>categorie</h3>
+                                <p>Rapide description : 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel tempus dui, vel eleifend nibh. 
+                                    Etiam dapibus iaculis ligula eu ullamcorper. Nam imperdiet laoreet nunc quis interdum. Sed ut accumsan nibh, eget maximus diam. 
+                                    Curabitur pretium massa non lacus condimentum cursus. Nullam eget dolor non metus sollicitudin interdum sed vitae urna.</p>
+                                <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                            </div>
+                            
+                        </section>    
+                    </article>
+                    <article class="article">
+                        <h2><a href="pages/article.html">titre de l'article</a></h2>
+                        <section>
+                            <img src="img/pexels-george-milton-7014337.jpg" alt="">
+                            <div>
+                                <h3>categorie</h3>
+                                <p>Rapide description : 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel tempus dui, vel eleifend nibh. 
+                                    Etiam dapibus iaculis ligula eu ullamcorper. Nam imperdiet laoreet nunc quis interdum. Sed ut accumsan nibh, eget maximus diam. 
+                                    Curabitur pretium massa non lacus condimentum cursus. Nullam eget dolor non metus sollicitudin interdum sed vitae urna.</p>
+                                <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                            </div>
+                            
+                        </section>    
+                    </article>
+                    <article class="article">
+                        <h2><a href="pages/article.html">titre de l'article</a></h2>
+                        <section>
+                            <img src="img/pexels-george-milton-7014337.jpg" alt="">
+                            <div>
+                                <h3>categorie</h3>
+                                <p>Rapide description : 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel tempus dui, vel eleifend nibh. 
+                                    Etiam dapibus iaculis ligula eu ullamcorper. Nam imperdiet laoreet nunc quis interdum. Sed ut accumsan nibh, eget maximus diam. 
+                                    Curabitur pretium massa non lacus condimentum cursus. Nullam eget dolor non metus sollicitudin interdum sed vitae urna.</p>
+                                <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                            </div>
+                            
+                        </section>    
+                    </article>
+                   
+                </div>
             </section>
+            <!-- <aside>
+                <h2>Les articles les plus populaires</h2>
+                
+                    <article>
+                        <h3><a href="pages/article.html">titre de l'article</a></h3>
+                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                    <h4>categorie</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium vel ipsum eget consequat. 
+                        Pellentesque eu eros posuere eros gravida gravida. Integer ut ex eu eros porta tincidunt dictum quis purus. 
+                        Curabitur rutrum ornare odio ut luctus. Aenean aliquam mi quis diam aliquam aliquam. Pellentesque ac tempor quam. 
+                        In ultricies tristique ligula quis gravida. Donec convallis dui eget odio tincidunt elementum.</p>
+                    </article>
+                    
+                    
+                 <hr>
+                 <article>
+                      <h3><a href="pages/article.html">titre de l'article</a></h3>
+                    <small>Ecrit par <span>aaaaaaaa</span> le <time datetime="2021-12-28">28/12/2021</time></small>
+                    <h4>categorie</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium vel ipsum eget consequat. 
+                        Pellentesque eu eros posuere eros gravida gravida. Integer ut ex eu eros porta tincidunt dictum quis purus. 
+                        Curabitur rutrum ornare odio ut luctus. Aenean aliquam mi quis diam aliquam aliquam. Pellentesque ac tempor quam. 
+                        In ultricies tristique ligula quis gravida. Donec convallis dui eget odio tincidunt elementum.</p>
+                 </article>
+                   
+   
+            </aside> -->
+            
             
         </main>
         <footer>
             <small>Copyright © 2021 K.Komala</small>
         </footer>
+            <!-- JS -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="js/jquery.flexslider-min.js"></script>
+            <script>
+                $(window).on('load', function() {
+                    $('.flexslider').flexslider({
+                        directionNav: true,
+                        controlNav: true
+                    });
+                });
+            </script>
     </body>
 
 </html>
