@@ -274,7 +274,9 @@ aside{
     margin:auto;
     background-color:rgba(255, 239, 211, 0.4) ;
   }
-
+  main img{
+   width: 100%;
+  }
   #home section{
     width: 90%;
     
@@ -327,7 +329,7 @@ aside{
     color:#08415C ;
   }
   .article >section > img{
-    width: 100%;
+    width: 350px;
     border-radius: 8px;
   }
   .article >section {
