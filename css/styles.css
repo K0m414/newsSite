@@ -335,9 +335,8 @@ aside{
   .article >section {
     
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
   }
-
 
   aside{
     margin: 0;
