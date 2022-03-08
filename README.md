@@ -1,6 +1,4 @@
-��#� �n�e�w�s�S�i�t�e�
-�
-�
+#newsSite 
 
 Site réalisé dans le cadre d’un projet scolaire.
 
