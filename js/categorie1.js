@@ -37,6 +37,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     function articlesText(dataArray){ 
         // boucle for pour récupérer l'index
         for (let i = 0; i < dataArray.length; i++) {
+            let date = dataArray[i].publishedAt;
+            date = new Date
+            date = date.toLocaleDateString('fr-FR',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
             articleText.innerHTML +=`
                 <article class="article">
                     <h2><a href="article.html?id=${i}">${dataArray[i].title}</a></h2>
@@ -45,7 +48,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         <div>
                             <!--<h3>${dataArray[i].title}</h3>-->
                             <p>${dataArray[i].description}</p>
-                            <small>Ecrit par <span>${dataArray[i].author}</span> le <time datetime=${dataArray[i].publishedAt}>${dataArray[i].publishedAt}</time></small>
+                            <small>Ecrit par <span>${dataArray[i].author}</span> le <time datetime=${dataArray[i].publishedAt}>${date}</time></small>
                         </div>
                     </section>    
                 </article>

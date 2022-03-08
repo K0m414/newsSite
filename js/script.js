@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const API_URL = 'https://newsapi.org/v2/top-headlines?country=fr&';
     const API_KEY = 'd50129b078c340e297f2cfdb19693ea9';
     const articleText = document.querySelector('.all-articles');
-
+    let articleData;
     // ajax
     fetch(`${API_URL}apiKey=${API_KEY}`)
         .then(response => response.json())
@@ -38,6 +38,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // dataArray.forEach(data => {
         for (let i = 0; i < dataArray.length; i++) {
             // console.log(i);
+            let date = dataArray[i].publishedAt;
+        date = new Date
+        date = date.toLocaleDateString('fr-FR',{ weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })
+        
             articleText.innerHTML +=`
                 <article class="article">
                     <h2><a href="pages/article.html?id=${i}">${dataArray[i].title}</a></h2>
@@ -46,7 +50,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                         <div>
                             <!--<h3>${dataArray[i].title}</h3>-->
                             <p>${dataArray[i].description}</p>
-                            <small>Ecrit par <span>${dataArray[i].author}</span> le <time datetime=${dataArray[i].publishedAt}>${dataArray[i].publishedAt}</time></small>
+                            <small>Ecrit par <span>${dataArray[i].author}</span> le <time datetime=${dataArray[i].publishedAt}>${date}</time></small>
                         </div>
                     </section>    
                 </article>
